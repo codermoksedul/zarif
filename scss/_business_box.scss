@@ -1,0 +1,86 @@
+#business_card_area{
+  width: 420px;
+  display: block;
+  margin: auto;
+  background-color: $bgColor;
+  padding-bottom: 70px;
+  position: relative;
+  .footer_area{
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.226);
+    border-radius: 50px 50px 0 0;
+    user-select: none;
+    p{
+      font-size: 1em;
+      font-weight: 500;
+      i{
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#portfolio_area{
+  padding: 50px 0px;
+  .title{
+    h2{
+      text-align: center;
+      font-size: 22px;
+    }
+    span{
+      color: $pColor;
+      font-size: 25px;
+      display: block;
+      text-align: center;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: $pColor;
+        right: 20%;
+        top: 50%;
+      }
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: $whColor;
+        background-color: $pColor;
+        padding: 10px;
+        width:30px;
+        height: 30px;
+        border-radius: 100%;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow:0 0 6px 0px #0000001a;
+        transition: all 0.5s;
+        &:hover{
+          background-color: $whColor;
+          color: $pColor;
+          transform: translateY(-5px)
+        }
+      }
+    }
+  }
+}
